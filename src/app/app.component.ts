@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   keyword = 'ng12-cybersoft';
+
+  doSearch(value: string) {
+    this.keyword = value;
+  }
 }
