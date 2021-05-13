@@ -18,8 +18,11 @@ export class HeaderComponent implements OnInit {
     }, 3000);
   }
 
-  changeTitle() {
-    this.sitename = 'The Will Will Web 2';
+  changeTitle(evt: MouseEvent) {
+    console.log(evt);
+    if (evt.ctrlKey) {
+      this.sitename = 'The Will Will Web 2';
+    }
   }
 
 }
