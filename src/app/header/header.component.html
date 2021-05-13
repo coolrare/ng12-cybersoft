@@ -24,10 +24,10 @@
   </div>
   <div class="title-wrapper">
     <div class="container">
-      <img src="/assets/images/logo.png" class="pull-left logo" (click)="changeTitle()">
+      <img src="/assets/images/logo.png" class="pull-left logo" (click)="changeTitle()" [title]="sitename">
       <div class="pull-left">
         <h1><a href="http://blog.miniasp.com/">{{sitename}}</a></h1>
-        <h3>{{subtitle}}</h3>
+        <h3 [innerHTML]="subtitle"></h3>
       </div>
       <div id="social-icons" class="pull-right social-icon">
         <a href="https://www.facebook.com/will.fans" title="Will 保哥的技術交流中心" target="_blank">
