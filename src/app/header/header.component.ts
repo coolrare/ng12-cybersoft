@@ -10,6 +10,8 @@ export class HeaderComponent implements OnInit {
   sitename = 'Hello World';
   subtitle = '記載著 <mark>Will</mark> 在網路世界的學習心得與技術分享';
 
+  counter = 0;
+
   constructor() { }
 
   ngOnInit(): void {
@@ -19,6 +21,7 @@ export class HeaderComponent implements OnInit {
   }
 
   changeTitle(evt: MouseEvent) {
+    this.counter++;
     console.log(evt);
     if (evt.ctrlKey) {
       this.sitename = 'The Will Will Web 2';
