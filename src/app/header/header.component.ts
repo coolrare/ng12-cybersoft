@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  sitename = 'Hello World';
+  subtitle = '記載著 Will 在網路世界的學習心得與技術分享';
+
   constructor() { }
 
   ngOnInit(): void {
+    setTimeout(() => {
+      this.sitename = 'The Will Will Web';
+    }, 3000);
+  }
+
+  changeTitle() {
+    this.sitename = 'The Will Will Web 2';
   }
 
 }
